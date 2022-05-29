@@ -1,0 +1,57 @@
+.table-box{
+width: 100%;
+height:100%;
+background: #fff;
+box-shadow: 0 10px 100px rgba(0,0,0,0.5);
+}
+
+
+table{ 
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	background:#fff;
+}
+
+
+td, th {
+	border: 0.1px solid #ff6600;
+	text-align: left;
+	padding: 10px;
+}
+
+tr:nth-child(even) {
+	background-color: rgba(246, 135, 55, 0.65);
+}
+
+body
+{
+    counter-reset: Count-Value;     
+}
+
+tr td:first-child:before
+{
+  counter-increment: Count-Value;   
+  content: counter(Count-Value);
+}
+
+th{
+	position:sticky;
+	top:0;
+	background:#ff884d;
+	color:#fff;
+	
+}
+tr th:nth-child(1){
+
+	text-align:center;
+
+}
+tr td:nth-child(1){
+	background:#ff884d;
+	text-align: center;
+	color:#fff; 
+	font-size:18px;
+	
+}
+
